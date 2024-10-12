@@ -36,11 +36,8 @@ jobs:
         run: npm install
       - name: build project
         run: npm run build
-      - name: create .env
-        run: |
-          touch .env
-          echo VITE_WORD=${{ secrets.VITE_WORD }} >> .env
-          echo VITE_PROVA=${{ secrets.VITE_PROVA }} >> .env
+        env:
+          VITE_WORD: ${{ secrets.VITE_WORD }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
