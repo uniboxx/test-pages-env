@@ -8,5 +8,3 @@ document.querySelector('#app').innerHTML = `
     <p>${word}</p>
   </div>
 `;
-
-setupCounter(document.querySelector('#counter'));
