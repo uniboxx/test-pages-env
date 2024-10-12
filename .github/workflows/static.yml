@@ -7,6 +7,7 @@ on:
     branches: ['main']
 env:
   VITE_WORD: ${{ secrets.VITE_WORD }}
+  VITE_PROVA: ${{ secrets.VITE_PROVA }}
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
